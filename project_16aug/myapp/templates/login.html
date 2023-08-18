@@ -1,0 +1,30 @@
+<div class="container pt-5">
+  <form action="" method="POST">
+      {% csrf_token %}
+
+      <!-- <div class="mb-3 mt-3">
+        <label for="email" class="form-label">Username:</label>
+        <input name = 'Username' type="email" class="form-control" id="email" >
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Password:</label>
+        <input name= 'Password' type="password" class="form-control" id="pwd" >
+      </div> -->
+      
+
+
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Username</label>
+        <input  name = 'Username' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text"> </div>
+        </div>
+        <div class="mb-3">
+        <label for="pwd" class="form-label">Password</label>
+        <input  name = 'Password' type="password" class="form-control" id="pwd" aria-describedby="emailHelp">
+        <div id="pwd" class="form-control"> </div>
+        </div>
+      <button type="login" class="btn btn-primary">login</button>
+      <!-- <button type="sign up" class="btn btn-primary">sign up</button> -->
+    </form>
+  </div>

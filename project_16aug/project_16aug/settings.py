@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-t==z1o2qe7bwi!rz7=t-99w77ghqa%!)5+--648n#o2@z%3l+6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['52.86.178.48']
+ALLOWED_HOSTS = ['54.208.18.12']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myapp'
+    
 ]
 
 MIDDLEWARE = [
@@ -75,9 +77,14 @@ WSGI_APPLICATION = 'project_16aug.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django.db.backends.mysql',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME'  : 'schema_16aug',
+        'USER'  :   'admin',
+        'PASSWORD' :  'admin1234',
+        'HOST' :   'database-1.cc9bpjv0ahoi.us-east-1.rds.amazonaws.com',
+        'PORT' : '3306',
+     }
 }
 
 
